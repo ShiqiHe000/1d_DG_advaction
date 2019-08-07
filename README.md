@@ -23,3 +23,4 @@ We solve the problem with initial condition <a href="https://www.codecogs.com/eq
 We choose <a href="https://www.codecogs.com/eqnedit.php?latex=\triangle&space;t=1.5\times&space;10^{-4}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\triangle&space;t=1.5\times&space;10^{-4}" title="\triangle t=1.5\times 10^{-4}" /></a> to ensure the temporal errors were small relative to the spatial errors. 
 
 ### Error Perfomance
+![alt text](https://github.com/ShiqiHe000/1d_DG_advaction/blob/master/advection_error.png)
