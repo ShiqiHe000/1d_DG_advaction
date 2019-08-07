@@ -1,0 +1,37 @@
+
+MODULE PRECOMPUTATION
+
+USE MPI
+USE BASIS
+USE MESH, ONLY: NEL_TOTAL
+USE PARAM, ONLY: N, M
+
+IMPLICIT NONE
+
+DOUBLE PRECISION, ALLOCATABLE, DIMENSION(:, :) :: GL_POINT_ALL  ! GUASS LEGENDRE POINTS
+DOUBLE PRECISION, ALLOCATABLE, DIMENSION(:, :) :: GL_W_ALL  ! GUASS LEGENDRE WEIGHTS
+DOUBLE PRECISION, ALLOCATABLE, DIMENSION(:, :) :: GLL_POINT_ALL ! GUASS LEGENDRE LOBATTO POINT
+DOUBLE PRECISION, ALLOCATABLE, DIMENSION(:, :) :: GLL_W_ALL  ! GUASS LEGENDRE LOBATTO WEIGHTS
+    
+CONTAINS
+
+SUBROUTINE 
+
+    IMPLICIT NONE
+    
+    INTEGER :: I
+    
+    ALLOCATE(GL_POINT_ALL(M+1))
+    
+    !-------------------------------------------------------------------
+    DO I=1, NEL_TOTAL
+        !Gauss Legendre quadrature nodes and weights
+        CALL GL(N)
+        
+        CALL GLL(N)
+    ENDDO
+    !-------------------------------------------------------------------
+    
+
+
+END MODULE PRECOMPUTATION
