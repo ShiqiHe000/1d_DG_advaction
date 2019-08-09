@@ -8,8 +8,9 @@ FC = mpif90
 
 OBJDIR = obj
 SRCDIR = src
+INCLUDEDIR = inc
 
-MOD = -J$(DIR)/$(OBJDIR)
+MOD = -J$(DIR)/$(INCLUDEDIR)
 
 SRC =  param.f90 \
        mpi.f90 \
