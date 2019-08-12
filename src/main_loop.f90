@@ -1,6 +1,7 @@
-!> mainpage 1d_advection
+!> @mainpage 1d_advection
 !> @author Shiqi He
 !> @version 1.0
+!> @date 2019.08.12
 
 
 PROGRAM MAIN_LOOP
