@@ -11,6 +11,10 @@ SRCDIR = src
 INCLUDEDIR = inc
 
 MOD = -J$(DIR)/$(INCLUDEDIR)
+WALL = -Wall
+OPT = -O3
+OG = -Og
+DEBUG = -g -fcheck=all -fimplicit-none -fbacktrace -pedantic -Wall
 
 SRC =  param.f90 \
        mpi.f90 \
@@ -22,7 +26,7 @@ SRC =  param.f90 \
        DG_wave.f90 \
        main_loop.f90 
 
-#SOURCE = $(wildcard $(DIR)/$(SRCDIR)/$(SRC))
+#SOURCE = $(wildcard $(DIR)/$(makefile formatSRCDIR)/$(SRC))
 #SOURCE  = $(DIR)/$(SRCDIR)
 SOURCE = $(patsubst %, $(DIR)/$(SRCDIR)/%, $(SRC))
 
@@ -31,10 +35,10 @@ OBJ = $(addprefix $(DIR)/$(OBJDIR)/, $(notdir $(SRC:.f90=.o)))
 
 $(DIR)/$(OBJDIR)/$(TGT) : $(OBJ)
 #	$(FC) $(MOD) -o $@ $^
-	$(FC) $(MOD) -o $(TGT) $^
+	$(FC) $(Og) $(WALL) $(MOD) -o $(TGT) $^
  
 $(DIR)/$(OBJDIR)/%.o : $(DIR)/$(SRCDIR)/%.f90
-	$(FC) $(MOD) -c $< -o $@
+	$(FC) $(Og) $(WALL) $(MOD) -c $< -o $@
 
 
 
@@ -55,8 +59,10 @@ help :
 	@echo "obj : $(OBJ)"
 
 
+debug : 
+	make "OPT = DEBUG"
+
 clean :
 	rm -rf $(OBJ) 
-#	rm -rf $(DIR)/$(OBJDIR)/$(TGT) 
-	rm -rf $(DIR)/$(OBJDIR)/*.mod
+	rm -rf $(DIR)/$(INCLUDEDIR)/*.mod
 	rm -rf *.dat *.txt $(TGT)
