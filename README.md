@@ -24,3 +24,6 @@ We choose <a href="https://www.codecogs.com/eqnedit.php?latex=\triangle&space;t=
 
 ### Error Perfomance
 ![alt text](https://github.com/ShiqiHe000/1d_DG_advaction/blob/master/advection_error.png)
+
+## Documentation
+More information about the codes can be found here[1d-advection-documentation](https://shiqihe000.github.io/1d_DG_advaction/namespacebasis.html).
