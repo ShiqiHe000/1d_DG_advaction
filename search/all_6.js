@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['g',['g',['../namespacebasis.html#aa1d9626099db202a0042b5a714015ca7',1,'basis']]],
+  ['gen_5fdual_5flaplacian',['gen_dual_laplacian',['../namespacegraph__partition.html#aeea51c3924c97af70c944124b030d836',1,'graph_partition']]],
+  ['gen_5fgraph_5flaplacian_5fquad',['gen_graph_laplacian_quad',['../namespacemesh.html#acd75386ba5331e8509a04ef75d5899c6',1,'mesh']]],
+  ['gen_5fsub_5fdual_5fgraph',['gen_sub_dual_graph',['../namespacegraph__partition.html#adf16519a7080f803930c1f456d32bc66',1,'graph_partition']]],
+  ['get_5ferror',['get_error',['../namespacedg__wave.html#afcfc2c76da0e4c04f345d62fcb3a0e88',1,'dg_wave']]],
+  ['get_5fnode_5fsequence',['get_node_sequence',['../namespacemesh.html#a7164213502f908343c3aae03071fd423',1,'mesh']]],
+  ['gl',['gl',['../namespacebasis.html#a064bd02ab9b95eaad6b624e3fee18813',1,'basis']]],
+  ['gl_5fpoint',['gl_point',['../namespacebasis.html#ae2670b7ef286bac85a329be46ce28d1e',1,'basis']]],
+  ['gl_5fw',['gl_w',['../namespacebasis.html#ae0ad83028aafe24562cd157f72cbc98f',1,'basis']]],
+  ['gll',['gll',['../namespacebasis.html#abbe6128a9c8fd491870cf7e04b16ddc9',1,'basis']]],
+  ['gll_5fpoint',['gll_point',['../namespacebasis.html#a33f2175a13c7fcc307958d2be2f85261',1,'basis']]],
+  ['gll_5fw',['gll_w',['../namespacebasis.html#af9cc0186b7b6e379e37ec3e4cbed0bbd',1,'basis']]],
+  ['graph_5flaplacian',['graph_laplacian',['../namespacemesh.html#a39cc54045a2e60b3426844da3347ad98',1,'mesh']]],
+  ['graph_5fpartition',['graph_partition',['../namespacegraph__partition.html',1,'']]],
+  ['graph_5fpartition_2ef90',['graph_partition.f90',['../graph__partition_8f90.html',1,'']]],
+  ['group',['group',['../namespacegraph__partition.html#adf8cbed5e3a23038f96b7ee8e9ddb600',1,'graph_partition']]]
+];
